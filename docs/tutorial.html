@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tutorial — OpS Digitais Dados</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="tutorial-wrap">
+    <a class="back" href="index.html">← Voltar</a>
+    <h1>Tutorial — OpS Digitais Dados</h1>
+    <p>por <strong>Joaquim Pedro de Morais Filho</strong> · usacomment.com · zicutake@mail.ru</p>
+
+    <h2>1. Instalar e executar</h2>
+    <pre><code>cd C:\Users\franc\OpSDigitaisDados
+python -m pip install -r requirements.txt
+python app\main.py</code></pre>
+    <p>Ou abra o EXE: <code>dist\OpSDigitaisDados\OpSDigitaisDados.exe</code></p>
+
+    <h2>2. Cadastrar usuário</h2>
+    <ol>
+      <li>Preencha <strong>Nome completo</strong> (obrigatório)</li>
+      <li>Opcional: documento, e-mail, telefone, observações</li>
+      <li>Clique em <strong>Salvar</strong></li>
+    </ol>
+
+    <h2>3. Registrar impressão digital</h2>
+    <ol>
+      <li>Selecione o usuário na lista</li>
+      <li>Escolha o dedo (etiqueta)</li>
+      <li><strong>Carregar imagem da digital</strong> (PNG/JPG do scanner)</li>
+      <li><strong>Registrar digital no usuário</strong></li>
+    </ol>
+    <p>O sistema extrai um template biométrico (ORB) e grava no banco SQLite interno.</p>
+
+    <h2>4. Identificar digital</h2>
+    <ol>
+      <li>Carregue uma imagem para verificar</li>
+      <li>Clique em <strong>Identificar no banco</strong></li>
+      <li>Se o score for suficiente, o usuário é encontrado automaticamente</li>
+    </ol>
+
+    <h2>5. Download (exportar tudo)</h2>
+    <p>Botão <strong>Exportar tudo</strong> gera um ZIP com:</p>
+    <ul>
+      <li><code>ops_digitais_dados.db</code> — banco completo</li>
+      <li><code>previews/</code> — imagens das digitais</li>
+      <li><code>manifest.json</code> — metadados da exportação</li>
+    </ul>
+
+    <h2>6. Upload (importar)</h2>
+    <p>Botão <strong>Importar / Upload</strong> restaura o ZIP. O banco atual é salvo como <code>.bak</code> antes da substituição.</p>
+
+    <h2>7. Gerar EXE</h2>
+    <pre><code>powershell -ExecutionPolicy Bypass -File scripts\build_exe.ps1</code></pre>
+
+    <h2>8. Contato</h2>
+    <p>
+      Joaquim Pedro de Morais Filho<br />
+      <a href="https://usacomment.com">usacomment.com</a><br />
+      <a href="mailto:zicutake@mail.ru">zicutake@mail.ru</a>
+    </p>
+  </div>
+</body>
+</html>

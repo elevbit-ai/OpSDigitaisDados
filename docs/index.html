@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpS Digitais Dados | Joaquim Pedro de Morais Filho</title>
+  <meta name="description" content="OpS Digitais Dados: leitor de impressão digital e registrador de banco de dados interno com exportação e importação. Por Joaquim Pedro de Morais Filho." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/icon.jpg" />
+</head>
+<body>
+  <header class="hero" style="background-image: linear-gradient(120deg, rgba(5,16,30,.9), rgba(8,40,55,.75)), url('assets/hero-4k.jpg');">
+    <nav>
+      <strong>OpS Digitais Dados</strong>
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#recursos">Recursos</a>
+        <a href="tutorial.html">Tutorial</a>
+        <a href="#download">Download</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </nav>
+    <div class="hero-copy">
+      <p class="badge">Biometria local · Banco interno · Export / Import</p>
+      <h1>OpS Digitais Dados</h1>
+      <p class="subtitle">Leitor de impressão digital e registrador de usuários com banco de dados interno no PC, download de tudo salvo e upload para restaurar.</p>
+      <p class="author">por <strong>Joaquim Pedro de Morais Filho</strong></p>
+      <div class="cta-row">
+        <a class="btn primary" href="#download">Baixar / Usar no PC</a>
+        <a class="btn ghost" href="tutorial.html">Tutorial</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="alert">
+    Os dados (cadastro + templates biométricos) ficam <strong>no computador local</strong> (SQLite).
+    Exporte o pacote ZIP para backup/download e use Importar para upload/restauração.
+  </section>
+
+  <main>
+    <section id="sobre" class="grid-2">
+      <div>
+        <h2>O que o sistema faz</h2>
+        <ul>
+          <li>Cadastro de usuários (nome, documento, e-mail, telefone, notas)</li>
+          <li>Registro de impressão digital a partir de imagem (scanner/exportação)</li>
+          <li>Identificação 1:N no banco interno</li>
+          <li><strong>Exportar tudo</strong> (download ZIP com DB + pré-visualizações)</li>
+          <li><strong>Importar / upload</strong> do pacote completo</li>
+          <li>Log de auditoria das operações</li>
+        </ul>
+      </div>
+      <figure>
+        <img src="assets/hero-4k.jpg" alt="OpS Digitais Dados — identidade digital" width="960" height="540" />
+        <figcaption>Sistema local seguro para registro biométrico e cadastro.</figcaption>
+      </figure>
+    </section>
+
+    <section id="recursos">
+      <h2>Recursos</h2>
+      <div class="cards">
+        <article><h3>Banco interno</h3><p>SQLite em pasta <code>data/</code> no PC.</p></article>
+        <article><h3>Digitais</h3><p>Templates ORB (OpenCV) armazenados por usuário.</p></article>
+        <article><h3>Download</h3><p>Botão Exportar gera ZIP completo.</p></article>
+        <article><h3>Upload</h3><p>Importar restaura o pacote (com backup .bak).</p></article>
+      </div>
+    </section>
+
+    <section id="download" class="download">
+      <h2>Download e execução</h2>
+      <ol>
+        <li>Site online (GitHub Pages): <a href="https://elevbit-ai.github.io/OpSDigitaisDados/">elevbit-ai.github.io/OpSDigitaisDados</a></li>
+        <li>Repositório GitHub: <a href="https://github.com/elevbit-ai/OpSDigitaisDados">elevbit-ai/OpSDigitaisDados</a></li>
+        <li>Imagens demo no PC: <code>C:\Users\franc\OpSDigitaisDados\sample_prints\</code></li>
+        <li>EXE: <code>dist/OpSDigitaisDados/OpSDigitaisDados.exe</code></li>
+        <li>Ou: <code>python app/main.py</code></li>
+        <li>Pasta local: <code>C:\Users\franc\OpSDigitaisDados</code></li>
+      </ol>
+    </section>
+
+    <section id="contato">
+      <h2>Autor</h2>
+      <div class="contact-card">
+        <p><strong>Joaquim Pedro de Morais Filho</strong></p>
+        <p>Website: <a href="https://usacomment.com" target="_blank" rel="noopener">usacomment.com</a></p>
+        <p>E-mail: <a href="mailto:zicutake@mail.ru">zicutake@mail.ru</a></p>
+        <p>Sistema: <strong>OpS Digitais Dados</strong> v1.0.0</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© OpS Digitais Dados · Joaquim Pedro de Morais Filho · usacomment.com · zicutake@mail.ru</p>
+  </footer>
+</body>
+</html>
