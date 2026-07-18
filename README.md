@@ -40,8 +40,23 @@ Saída: `dist\OpSDigitaisDados\OpSDigitaisDados.exe`
 
 ## Website
 
-- `website/index.html`
-- `website/tutorial.html`
+- Local: `website/index.html` e `website/tutorial.html`
+- **GitHub Pages:** https://elevbit-ai.github.io/OpSDigitaisDados/
+
+## Imagens demo (teste de digital)
+
+Pasta no PC e no repositório:
+
+```
+C:\Users\franc\OpSDigitaisDados\sample_prints\
+```
+
+| Arquivo | Uso |
+|---------|-----|
+| `demo_a.png` | Digital de teste (usuário A) |
+| `demo_a2.png` | Mesma digital A (deve identificar) |
+| `demo_b.png` | Outra digital (usuário B) |
+| `backup_test.zip` | Exemplo de pacote exportado |
 
 ## Privacidade
 
